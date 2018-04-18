@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'pag1/mystyle.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+</head>
+<body>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-inverse">
+            <div class="navbar-header"><a class="navbar-brand" href="{% url 'registerpage:homepage' %}">MyDrive</a></div>
+            <div><ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'registerpage:caaar' %}"><span class="glyphicon glyphicon-search"> Vehicles</span></a></li>
+                <li><a href="#about"><span class="glyphicon glyphicon-plus"> About Us</span></a></li>
+                <li><a href="#team"><span class="glyphicon glyphicon-user"> The Team</span></a></li>
+                <li><a href="{% url 'registerpage:fq' %}"><span class="glyphicon glyphicon-question-sign"> FAQ</span></a></li>
+            </ul></div>
+    </nav>
+    <center>
+    <table>
+        <tr>
+            <td>
+                <form method="post" action="#" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label>Car registration number</label> <input class="inp" type="text" name="registration_number" placeholder="Car number"/> <br/><br>
+                <label>Car model</label> <input class="inp" type="text" name="cartype" placeholder="Car_model"/> <br/><br>
+                <label>Car owner name</label> <input class="inp" type="text" name="username" placeholder="owner"/> <br/> <br>
+                <label>Resistration year</label> <input class="inp" type="text" name="registration_year" placeholder="R_year"/> <br/><br>
+                <label>Car Name:</label> <input class="inp" type="text" name="carname" placeholder="Toyota Corolla"/> <br/><br>
+                <label>Credit Card No:</label> <input class="inp" type="text" name="cardno" placeholder="cc123jhak"/> <br/><br>
+                  <label>Enter Base Price(See from the vehicles list)</label> <input class="inp" type="int" name="cost" placeholder="12345"/> <br/><br>
+                <input class="sub" type="submit" value="Continue" />
+                </form>
+    </center>
+</body>
+</html>

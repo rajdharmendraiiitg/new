@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Title of the file -->
+  <title>India's first Crowdfunded Car Rental Platform</title>
+
+  <!-- External Style Sheets for this file -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <sc-ript src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <sc-ript src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  {% load static %}
+
+  <link rel="stylesheet" href="{% static 'page1/login.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'page1/mystyle.css' %}" type="text/css">
+  <!--link rel="stylesheet" href="{% static 'module1/sign-up.css' %}" type="text/css"-->
+  </head>
+
+  <body>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+      <nav class="navbar navbar-inverse">
+              <div class="navbar-header"><a class="navbar-brand" href="{% url 'registerpage:homepage' %}">MyDrive</a></div>
+              <div><ul class="nav navbar-nav navbar-right">
+                  <li><a href="{% url 'registerpage:caaar' %}"><span class="glyphicon glyphicon-search"> Vehicles</span></a></li>
+                  <li><a href="#about"><span class="glyphicon glyphicon-plus"> About Us</span></a></li>
+                  <li><a href="#team"><span class="glyphicon glyphicon-user"> The Team</span></a></li>
+                  <li><a href="{% url 'registerpage:fq' %}"><span class="glyphicon glyphicon-question-sign"> FAQ</span></a></li>
+              </ul></div>
+      </nav>
+<div>
+  <div class="jumbotron" id="top">
+    <div>
+    <div class="container-fluid bg-black text-center" id="top-text">
+    <h1 class="asap-font" id="my-name"><br>MyDrive</h1>
+      <p id="my-intro">India's First CrowdFunded Car Rental Platform</p>
+      <div>
+    <div class="container text-center" id="top-text">
+      <div>
+      <div class="btn-group buffer">
+      <center>
+        <a href="{% url 'registerpage:log' %}" class="btn btn-lg btn-primary outline" target="_blank" id="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i> Choose a Car for Rent</a>
+        <a href="{% url 'registerpage:logh1' %}" class="btn btn-lg btn-warning outline" target="_blank" id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> Give your Car for Rent</a>
+        <br>
+        <br>
+        <a href="{% url 'registerpage:reg' %}" class="btn btn-lg btn-success outline" target="_blank" id="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i> First TIme ?? Get Youself Comfortable Here</a>
+      </center>
+      </div>
+    <br><br><br><br><br><br><br><br>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Container (About Section) -->
+
+
+</html>
+</body>

@@ -1,0 +1,23 @@
+body{
+    background-size: cover;
+}
+
+table,td {
+    margin-left: 0px; margin-top: 80px;
+    border: 1px solid black;
+    padding: 0px;
+}
+
+th{
+    background-color: #122b40;
+    color: white;
+}
+
+img {
+    height: 190px;
+    width: 280px;
+}
+
+.navbar-brand{
+    font-family: "Monotype Corsiva" , cursive;
+}
